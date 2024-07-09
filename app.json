@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "ai-travel-planner-app",
+    "name": "grabits-app",
     "slug": "grabits",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -19,7 +19,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.mafuwu.grabits"
     },
     "web": {
       "bundler": "metro",
