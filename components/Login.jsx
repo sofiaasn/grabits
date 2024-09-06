@@ -27,7 +27,7 @@ export default function Login() {
                 fontSize:17,
                 textAlign:'center',
                color:Colors.GRAY,
-               marginTop:20,
+               marginTop:10,
                marginBottom: -50,
             }}>Embrace a sustainable lifestyle with our gamified habit tracker. Choose daily eco-friendly habits, track your progress, and earn achievements and badges along the way. Make positive changes for yourself and the planet, one habit at a time.</Text>
        
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
         padding:25
     },
     button:{
-        padding:15,
+        padding:10,
         backgroundColor:Colors.PRIMARY,
         borderRadius:99,
         marginTop:'20%'
