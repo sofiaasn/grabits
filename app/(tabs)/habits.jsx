@@ -31,7 +31,9 @@ const Habits = () => {
       <Text style={styles.title}>Don't know what each habit means? Here's a description:</Text>
       {habitsData.map((habit) => (
         <View key={habit.id} style={styles.habitContainer}>
-          <Text style={styles.habitTitle}>{habit.title}</Text>
+          <View style={styles.habitHeader}>
+            <Text style={styles.habitTitle}>{habit.title}</Text>
+          </View>
           <Text style={styles.habitDescription}>{habit.description}</Text>
         </View>
       ))}
@@ -57,11 +59,21 @@ const styles = StyleSheet.create({
     padding: 15,
     borderRadius: 10,
     backgroundColor: '#F0F0F0',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    shadowRadius: 4,
+    elevation: 5,
+  },
+  habitHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 5,
   },
   habitTitle: {
     fontSize: 18,
     fontWeight: 'bold',
-    marginBottom: 5,
+    color: Colors.DARK_GRAY,
   },
   habitDescription: {
     fontSize: 16,

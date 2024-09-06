@@ -3,7 +3,6 @@ import React from 'react'
 import { Tabs } from 'expo-router'
 import { Ionicons } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
-import { FontAwesome } from '@expo/vector-icons';
 import {Colors} from './../../constants/Colors'
 
 
@@ -23,8 +22,8 @@ export default function TabLayout() {
         <Tabs.Screen name="habits"
           options={{
             tabBarLabel:'Habits',
-            tabBarIcon:({color})=><FontAwesome name="leaf"
-            size={24} color={color} />
+            tabBarIcon:({color})=><Ionicons name="information-circle-outline" 
+            size={24} color={color} />          
           }}
         />
         

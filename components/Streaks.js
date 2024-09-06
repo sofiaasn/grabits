@@ -1,17 +1,16 @@
-// components/Streaks.js
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, FlatList } from 'react-native';
 import { ProgressBar } from 'react-native-paper';
 import { Colors } from './../constants/Colors';
 
 const Streaks = ({ streaks, habitsData }) => {
-  const renderStreakItem = (habit) => {
-    const streakCount = streaks[habit.id] || 0;
-    const progress = streakCount / 7; // Example: 7-day streak target
+  const renderStreakItem = ({ item }) => {
+    const streakCount = streaks[item.id] || 0;
+    const progress = streakCount / 7; 
 
     return (
-      <View key={habit.id} style={styles.streakContainer}>
-        <Text style={styles.title}>{habit.title}</Text>
+      <View style={styles.streakContainer}>
+        <Text style={styles.title}>{item.title}</Text>
         <Text style={styles.streakText}>Current Streak: {streakCount} days</Text>
         <ProgressBar progress={progress} color={Colors.GREEN} style={styles.progressBar} />
       </View>
@@ -21,7 +20,11 @@ const Streaks = ({ streaks, habitsData }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.header}>Your Streaks</Text>
-      {habitsData.map(habit => renderStreakItem(habit))}
+      <FlatList
+        data={habitsData}
+        renderItem={renderStreakItem}
+        keyExtractor={(item) => item.id}
+      />
     </View>
   );
 };
