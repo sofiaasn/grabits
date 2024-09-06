@@ -1,50 +1,48 @@
-# Welcome to your Expo app 👋
+## In a rush? Grab the APK 🏃‍♂️🏃‍♂️🏃‍♂️
+[Here!](https://expo.dev/artifacts/eas/cd8YhxTzENX8EAoSV4q1mS.apk)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Features
 
-## Get started
+- **Daily Habit Tracking**: Users can select and complete up to 3 habits per day.
+- **Achievements and Badges**: Earn badges by completing habits.
+- **Streak Tracking**: Monitor habit streaks to maintain consistency.
+- **Social Sharing**: Share achieved badges on social media platforms.
 
-1. Install dependencies
+## Installation
 
-   ```bash
-   npm install
-   ```
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/yourusername/grabits.git
+    cd grabits
+    ```
 
-2. Start the app
+2. **Install dependencies**:
+    ```bash
+    npm install
+    ```
 
-   ```bash
-    npx expo start
-   ```
+3. **Set up Firebase**:
+    - Create a Firebase project.
+    - Add your Firebase configuration to `firebaseConfig.js`.
 
-In the output, you'll find options to open the app in a
+4. **Run the application**:
+    ```bash
+    expo start
+    ```
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Usage
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **Select Daily Habits**: Users can choose from a rotating list of 3 habits.
+- **Complete Habits**: Mark habits as complete to earn points and badges.
+- **View Profile**: Check your overall progress and see earned badges.
+- **Share Badges**: Share your achievements on social media directly from the app.
 
-## Get a fresh project
+## Technologies Used
 
-When you're ready, run:
+- **React Native** with **Expo**
+- **Firebase** for authentication and database
 
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Credits
+   - **Expo**
+   - **Firebase**
+   - **And all the open-source libraries that make this project possible.**
