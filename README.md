@@ -1,6 +1,3 @@
-## In a rush? Grab the APK 🏃‍♂️🏃‍♂️🏃‍♂️
-[Here!](https://expo.dev/artifacts/eas/cd8YhxTzENX8EAoSV4q1mS.apk)
-
 ## Features
 
 - **Daily Habit Tracking**: Users can select and complete up to 3 habits per day.
